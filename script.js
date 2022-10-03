@@ -14,10 +14,13 @@ uva.innerHTML += frutas[2]
 // let adicionando = null
 
 // const adicionaFruta = () => {
-//     for (let i = 0; i < frutas.length; i++)
+//     for (let i = 0; i < frutas.length; i++){
 //         adicionando = document.getElementById(`frutas-${i}`)
 //         adicionando.innerHTML += frutas[i]
+// } 
 // }
+
+// console.log(document.getElementsByTagName("li"))
 
 // adicionaFruta()
 
@@ -31,7 +34,7 @@ const frutaAdicionada = () => {
     frutas.push(entradaFruta.value)
     console.log(frutas)
     const frutaUsuario = document.getElementById("fruta-4")
-    frutaUsuario.innerHTML += entradaFruta.value
+    frutaUsuario.innerHTML += `<li> ${entradaFruta.value} </li>`
     entradaFruta.value = ""
 }
 
